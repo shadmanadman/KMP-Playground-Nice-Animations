@@ -2,7 +2,9 @@ package org.kmp.playground.nice.animations
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
@@ -20,6 +22,8 @@ import kmp_playground_animations.composeapp.generated.resources.compose_multipla
 @Preview
 fun App() {
     MaterialTheme {
-
+        Column(Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+            PaymentProgressStatus()
+        }
     }
 }
